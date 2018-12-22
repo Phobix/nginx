@@ -14,7 +14,7 @@ server {
 #Maxmind geoblock
 	#include /config/nginx/geoblock.conf;
 location / {
-        auth_request /auth-4; #For server-auth with Organizr, remove unless you use Organizr.
+        auth_request /auth-1; #For server-auth with Organizr, remove unless you use Organizr.
 	proxy_pass http://192.168.1.50:3000;
 	proxy_hide_header X-Frame-Options;
 	proxy_set_header X-Forwarded-Host $host;
